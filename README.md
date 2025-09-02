@@ -19,8 +19,8 @@ A modern web application built with **React**, **TypeScript**, **Next.js**, and 
 ## 📦 Installation
 
 ```bash
-git clone https://github.com/your-username/your-repo-name.git
-cd your-repo-name
+git clone https://github.com/Balanquit-Kendrick/Savings-Tracker.git
+cd Savings-Tracker
 npm install
 npm run dev
 ```
@@ -77,8 +77,8 @@ This project is licensed under the MIT License.
 
 ## 📬 Contact
 
-- GitHub: [your-username](https://github.com/your-username)
-- Email: your.email@example.com
+- GitHub: [Balanquit-Kendrick](https://github.com/Balanquit-Kendrick)
+- Email: zxckendrick123@gmail.com
 
 ---
 
