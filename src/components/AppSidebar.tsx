@@ -4,6 +4,7 @@ import {
   Calendar,
   ChevronDown,
   ChevronUp,
+  DollarSign,
   Home,
   Inbox,
   Plus,
@@ -12,6 +13,7 @@ import {
   Settings,
   User,
   User2,
+  Users,
 } from "lucide-react";
 import {
   Sidebar,
@@ -43,7 +45,7 @@ import { CollapsibleContent, CollapsibleTrigger } from "./ui/collapsible";
 const items = [
   {
     title: "Home",
-    url: "#",
+    url: "/",
     icon: Home,
   },
   {
@@ -99,6 +101,32 @@ const AppSidebar = () => {
                   </SidebarMenuButton>
                 </SidebarMenuItem>
               ))}
+            </SidebarMenu>
+          </SidebarGroupContent>
+        </SidebarGroup>
+        <SidebarGroup>
+          <SidebarGroupLabel>Lists</SidebarGroupLabel>
+          <SidebarGroupAction>
+            <Plus /> <span className="sr-only">Add Project</span>
+          </SidebarGroupAction>
+          <SidebarGroupContent>
+            <SidebarMenu>
+              <SidebarMenuItem>
+                <SidebarMenuButton asChild>
+                  <Link href="/users">
+                    <Users />
+                    See All Users
+                  </Link>
+                </SidebarMenuButton>
+              </SidebarMenuItem>
+              <SidebarMenuItem>
+                <SidebarMenuButton asChild>
+                  <Link href="/payments">
+                    <DollarSign />
+                    See All Payments
+                  </Link>
+                </SidebarMenuButton>
+              </SidebarMenuItem>
             </SidebarMenu>
           </SidebarGroupContent>
         </SidebarGroup>
@@ -212,7 +240,8 @@ const AppSidebar = () => {
                 </SidebarMenuButton>
               </DropdownMenuTrigger>
               <DropdownMenuContent sideOffset={10} align="end">
-                <DropdownMenuItem>Account</DropdownMenuItem>
+                <DropdownMenuItem><Link href={"/users/test"}>My
+                Account</Link></DropdownMenuItem>
                 <DropdownMenuItem>Settings</DropdownMenuItem>
                 <DropdownMenuItem>Sign out</DropdownMenuItem>
               </DropdownMenuContent>
